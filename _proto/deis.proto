@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package _proto;
+
+service PoweredBy {
+  rpc PoweredBy(Request) returns (Response) {}
+}
+
+message Request {
+  string name = 1;
+}
+
+message Response {
+  string Message = 1;
+}
